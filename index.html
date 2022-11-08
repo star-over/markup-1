@@ -3,23 +3,256 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta
-    http-equiv="X-UA-Compatible"
-    content="IE=edge"
-  >
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-  <link
-    rel="stylesheet"
-    href="css/main.css"
-  >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
   <title>Start up landing page</title>
 </head>
 
 <body>
-  <div class="text-∫xl">Hello world</div>
+  <!-- Navbar -->
+  <nav class="relative container mx-auto p-6 ">
+    <!-- flex container -->
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="pt-2">
+        <img src="img/logo.png" alt="">
+      </div>
+
+      <!-- Menu Items -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#">Products</a>
+        <a href="#">Pricing</a>
+        <a href="#">FAQ</a>
+        <a href="#">Blog</a>
+        <a href="#">Contacts</a>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex gap-1">
+        <button class="px-2 md:px-4 lg:px-6 xl:px-10 py-1 md:py-1.5 text-myWhisper bg-myKashmirBlue rounded-full align-baseline">Sign In</button>
+        <button class="px-2 md:px-4 lg:px-6 xl:px-10 py-1 md:py-1.5 text-myWhisper bg-myKashmirBlue rounded-full align-baseline">Sign Up</button>
+      </div>
+    </div>
+
+    <!-- Hero section -->
+    <section>
+      <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0">
+
+        <!-- left item -->
+        <div class="flex flex-col mb-4 md:mb-32 space-y-12 md:w-1/2">
+          <h1 class="max-w-md text-4xl font-bold md:text-center md:text-5xl text-left">
+            Monitor your business on real-time dashboard
+          </h1>
+          <p class="max-w-sm md:text-center text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <button class="px-2 md:px-4 lg:px-6 xl:px-10 py-1 md:py-1.5 text-myWhisper bg-myRosePearl rounded-full align-baseline">Sign In</button>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="md:w-1/2">
+          <img class="md:hidden bg-white" src="./img/dashboard-xs.png" alt="">
+          <div class="hidden md:block relative">
+            <img class="bg-white max-w-max ml-12 px-8 py-6 rounded-2xl shadow-2xl" src="./img/dashboard-lg.png" alt="" width="745" height="508">
+            <img class="absolute left-0 top-40 bg-white px-8 py-6 rounded-2xl shadow-2xl" src="./img/dashboard-item-lg.png" alt="" width="279" height="185">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section-->
+    <section class="container flex flex-col mx-auto px-4 md:my-10 space-y-8 md:space-y-0">
+      <!-- Main feature -->
+      <div class="flex flex-col">
+        <h2 class="text-left text-2xl md:text-4xl font-bold md:text-center">
+          Main Features
+        </h2>
+        <p class="text-left md:text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
+        </p>
+      </div>
+
+      <!-- Other features -->
+      <div class="flex flex-col  md:flex-row items-center justify-between space-y-3">
+
+        <!-- Watch feature -->
+        <div class="flex md:flex-col flex-row items-start md:items-center space-x-4">
+          <img class="" src="./img/Icon-watch.svg" alt="">
+          <div class="flex flex-col">
+            <h3 class="text-base font-bold text-left md:text-center">
+              Monitoring 24/7
+            </h3>
+            <p class="text-base text-left md:text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sint beatae harum nobis.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- App feature -->
+        <div class="flex md:flex-col flex-row items-start md:items-center  space-x-4">
+          <img src="./img/Icon-app.svg" alt="">
+          <div class="flex flex-col">
+            <h3 class="text-base font-bold text-left md:text-center">
+              Widget System
+            </h3>
+            <p class="text-base text-left md:text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sint beatae harum nobis.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Rocket feature -->
+        <div class="flex md:flex-col flex-row items-start md:items-center space-x-4">
+          <img src="./img/Icon-rocket.svg" alt="">
+          <div class="flex flex-col">
+            <h3 class="text-base font-bold text-left md:text-center">
+              Best Performance
+            </h3>
+            <p class="text-base text-left md:text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sint beatae harum nobis.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Charts -->
+    <section class="container flex flex-col space-y-8">
+
+      <!-- chart 1 -->
+      <div class="flex flex-col md:flex-row md:items-center md:gap-8">
+        <div class="flex flex-col md:w-1/2">
+          <h2 class="text-xl md:text-3xl max-w-1/2 text-left font-bold">
+            Automated Reports & Widget Alerts
+          </h2>
+          <p class="text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus officiis eaque repudiandae velit laudantium, mollitia reiciendis rem ad aliquid quasi quae facilis a et ab officia ipsam quaerat dignissimos? Rem?
+          </p>
+        </div>
+        <img class="md:hidden md:w-1/2 bg-white p-6 m-2 rounded-2xl shadow-lg" src="./img/chart1-xs.png" alt="">
+        <img class="hidden md:block w-1/2 bg-white p-6 m-2 rounded-2xl shadow-lg" src="./img/chart1-lg.png" alt="">
+      </div>
+
+      <!-- chart 2 -->
+      <div class="flex flex-col md:flex-row-reverse md:items-center  md:gap-8">
+        <div class="flex flex-col md:w-1/2">
+          <h2 class="text-xl md:text-3xl max-w-1/2 text-left font-bold">
+            Fully customizable to address your needs
+          </h2>
+          <p class="text-left">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae magni minus nostrum eaque cumque praesentium nam eum veritatis, ea et perspiciatis doloribus, debitis pariatur? Temporibus corporis nam nobis dolorum. Sed, vel voluptates?
+          </p>
+        </div>
+        <img class="md:hidden md:w-1/2 bg-white p-6 m-2 rounded-2xl shadow-lg" src="./img/chart2-xs.png" alt="">
+        <img class="hidden md:block w-1/2 bg-white p-6 m-2 rounded-2xl shadow-lg" src="./img/chart2-lg.png" alt="">
+      </div>
+
+      <!-- chart 3 -->
+      <div class="flex flex-col md:flex-row md:items-center md:gap-8">
+        <div class="flex flex-col md:w-1/2">
+          <h2 class="text-xl md:text-3xl max-w-1/2 text-left font-bold">
+            Pre-built Dashboard Templates
+          </h2>
+          <p class="text-left">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea magni commodi, adipisci a neque atque inventore repellat fugiat exercitationem, magnam earum iste quasi ducimus veniam!
+          </p>
+        </div>
+        <img class="md:hidden md:w-1/2 bg-white p-6 m-2 rounded-2xl shadow-lg" src="./img/chart3-xs.png" alt="">
+        <img class="hidden md:block w-1/2 bg-white p-6 m-2 rounded-2xl shadow-lg" src="./img/chart3-lg.png" alt="">
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="container flex flex-col justify-center mt-20">
+      <h2 class="text-3xl font-bold text-center mb-10">
+        Pricing Plans
+      </h2>
+      <p class="text-center mb-14 max-w-lg m-auto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officiis nobis esse! Labore, voluptate expedita!
+      </p>
+      <!-- Price cards -->
+      <div class="flex space-x-10">
+
+        <!-- 1. Starter -->
+        <div class="w-1/3 rounded-3xl bg-myBlueZodiac">
+          <div class="lg:mx-16 md:mx-10 mt-10 mb-14 text-center  flex flex-col">
+            <h3 class="text-white font-bold text-2xl">
+              Starter
+            </h3>
+            <p class="text-myWildBlueYonder pb-6 border-b-[1px] border-myAstronaut">
+              up to 3 users
+            </p>
+            <p class="text-white font-bold pt-6">$<span class="text-white text-5xl font-bold">29</span></p>
+            <p class="text-myWildBlueYonder pb-6">
+              per month
+            </p>
+            <button class="px-2 md:px-4 lg:px-6 xl:px-10 py-1 md:py-1.5 text-myWhisper bg-myBlueZodiac rounded-full border-[1px] border-myAstronaut">Order</button>
+          </div>
+        </div>
+
+        <!-- 2. Standart -->
+        <div class="w-1/3 rounded-3xl bg-myBlueZodiac">
+          <div class="lg:mx-16 md:mx-10 mt-10 mb-14 text-center  flex flex-col">
+            <h3 class="text-white font-bold text-2xl">
+              Standart
+            </h3>
+            <p class="text-myWildBlueYonder pb-6 border-b-[1px] border-myAstronaut">
+              up to 20 users
+            </p>
+            <p class="text-white font-bold pt-6">$<span class="text-white text-5xl font-bold">99</span></p>
+            <p class="text-myWildBlueYonder pb-6">
+              per month
+            </p>
+            <button class="px-2 md:px-4 lg:px-6 xl:px-10 py-1 md:py-1.5 text-myWhisper bg-myBlueZodiac rounded-full border-[1px] border-myAstronaut">Order</button>
+          </div>
+        </div>
+
+        <!-- 3. Premium -->
+        <div class="w-1/3 rounded-3xl bg-myBlueZodiac">
+          <div class="lg:mx-16 md:mx-10 mt-10 mb-14 text-center  flex flex-col">
+            <h3 class="text-white font-bold text-2xl">
+              Premium
+            </h3>
+            <p class="text-myWildBlueYonder pb-6 border-b-[1px] border-myAstronaut">
+              up to 200 users
+            </p>
+            <p class="text-white font-bold pt-6">$<span class="text-white text-5xl font-bold">299</span></p>
+            <p class="text-myWildBlueYonder pb-6">
+              per month
+            </p>
+            <button class="px-2 md:px-4 lg:px-6 xl:px-10 py-1 md:py-1.5 text-myWhisper bg-myBlueZodiac rounded-full border-[1px] border-myAstronaut">Order</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="flex justify-between items-end pt-10 mt-20 border-t-[1px] border-myAstronaut">
+      <!-- logo -->
+      <img class="w-auto h-8" src="./img/logo-xs.png" alt="">
+
+      <!-- links -->
+      <div class="hidden md:flex justify-center space-x-4">
+        <a class="text-myWildBlueYonder font-light text-sm" href="#">Product</a>
+        <a class="text-myWildBlueYonder font-light text-sm" href="#">Pricing Plans</a>
+        <a class="text-myWildBlueYonder font-light text-sm" href="#">FAQ</a>
+        <a class="text-myWildBlueYonder font-light text-sm" href="#">Blog</a>
+      </div>
+
+      <!-- Socials -->
+      <div class="flex justify-end space-x-4">
+        <img class="w-auto h-5" src="./img/Facebook.png" alt="" width="10" height="20">
+        <img class="w-auto h-5" src="./img/Twitter.png" alt="" width="25" height="20">
+        <img class="w-auto h-5" src="./img/Instagram.png" alt="" width="21" height="20">
+      </div>
+    </footer>
+  </nav>
 </body>
 
 </html>
+

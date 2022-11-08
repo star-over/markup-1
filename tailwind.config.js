@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         myRosePearl: "#EF2A82",
         myBunting: "#172755",
-        myWildBlueYonder:"#8794BA",
+        myWildBlueYonder: "#8794BA",
         myAzureRadiance: "#0088F0",
         myWhisper: "#EEEEF6",
         myZircon: "#F8F9FF",
